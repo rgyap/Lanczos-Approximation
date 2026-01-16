@@ -29,9 +29,9 @@ RECURSIVE FUNCTION GAMMA_L(z) RESULT(res)
         res = PI / (SIN(PI*z) * GAMMA_L(1.0_qp - z)) 
     ELSE 
         z1 = z - (1.0_qp, 0.0_qp)
-        x = Coeffs(1,1) 
+        x = Coeffs(1) 
         DO i=2, K+1
-            x = x + (Coeffs(i,1) / (z1 + i - 1))
+            x = x + (Coeffs(i) / (z1 + i - 1))
         END DO
         t = z1 + G + 0.5_qp
         y1 = SQ2 * SQPI * (t ** (z1 + 0.5_qp))
