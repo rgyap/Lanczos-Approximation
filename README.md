@@ -10,7 +10,7 @@ The parameter $g$ can be any nonnegative real number.
 
 It will then output $k+1$ numbers, say $a'_1, ..., a'_k$ (in the same order of the output). With that, for any $z\in\mathbb{C}$ such that $\Re(z)>-0.5$, we have the following approximation:
 
-$$\Gamma(z+1) \approx \sqrt{2\pi} {\left(z+g+\tfrac{1}{2}\right)}^{z+\tfrac{1}{2}} e^{-\left(x+g+\tfrac{1}{2}\right)}\left(a'_0 + \frac{a'_1}{z+1} + {...} + \frac{a'_k}{z+k} \right)$$
+$$\Gamma(z+1) \approx \sqrt{2\pi} {\left(z+g+\tfrac{1}{2}\right)}^{z+\tfrac{1}{2}} e^{-\left(z+g+\tfrac{1}{2}\right)}\left(a'_0 + \frac{a'_1}{z+1} + {...} + \frac{a'_k}{z+k} \right)$$
 
 For example, with those numbers, one can create the following implementation of the Gamma function in Fortran, which should be valid for all complex numbers.
 
