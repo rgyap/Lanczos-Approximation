@@ -44,3 +44,7 @@ END FUNCTION GAMMA_L
 ## Explain??
 
 Please refer to the PDF file, which should also include a Python implementation.
+
+---
+
+**Note** (17 January 2026). A Java version of the program that also uses arbitrary-precision arithmetic is now included.
