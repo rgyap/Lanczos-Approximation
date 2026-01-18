@@ -1,6 +1,6 @@
-# Lanczos-Approximation
+# Lanczos-Approximation (Java version)
 
-A command-line Fortran program that calculates the coefficients of Lanczos' approximation of the Gamma function.
+A command-line Java program that calculates the coefficients of Lanczos' approximation of the Gamma function.
 
 ## How to use?
 
