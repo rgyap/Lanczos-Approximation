@@ -7,6 +7,7 @@ A command-line Fortran program that calculates the coefficients of Lanczos' appr
 Compile the `Main.java` file then execute the output on the command line. It will then ask for two numbers:
 - $k$, any positive integer.
 - $g$, any nonnegative real number. 
+
 Next, it will ask how many digits would you like to see for each number that will be outputted (with the help of `java.math.BigDecimal.setScale()`).
 
 It will then output $k+1$ numbers, say $a'_1, ..., a'_k$ (in the same order of the output), which are computed depending on the values of $k$ and $g$. With that, for any $z\in\mathbb{C}$ such that $\Re(z)>-0.5$, we have the following approximation:
