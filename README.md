@@ -8,7 +8,7 @@ Compile the `lanczos_coefficients.f90` file then execute the output on the comma
 The parameter $k$ can be any positive integer, but since this program only makes use of quadruple-precision numbers, any value of $k$ of 11 or more would result in garbage.
 The parameter $g$ can be any nonnegative real number. 
 
-It will then output $k+1$ numbers, say $a'_1, ..., a'_k$ (in the same order of the output). With that, for any $z\in\mathbb{C}$ such that $\Re(z)>-0.5$, we have the following approximation:
+It will then output $k+1$ numbers, say $a'_1, ..., a'_k$ (in the same order of the output), which are computed depending on the values of $k$ and $g$. With that, for any $z\in ℂ$ such that $\Re(z)>-0.5$, we have the following approximation:
 
 $$\Gamma(z+1) \approx \sqrt{2\pi} {\left(z+g+\tfrac{1}{2}\right)}^{z+\tfrac{1}{2}} e^{-\left(z+g+\tfrac{1}{2}\right)}\left(a'_0 + \frac{a'_1}{z+1} + {...} + \frac{a'_k}{z+k} \right)$$
 
@@ -41,10 +41,8 @@ RECURSIVE FUNCTION GAMMA_L(z) RESULT(res)
 END FUNCTION GAMMA_L
 ```
 
-## Explain??
-
-Please refer to the PDF file, which should also include a Python implementation.
+For more technical details about how this works, please refer to the PDF file, which should also include a Python implementation.
 
 ---
 
-**Note** (17 January 2026). A Java version of the program that also uses arbitrary-precision arithmetic is now included.
+**Note** (17 January 2026). A Java version of the program that also uses arbitrary-precision arithmetic is now included in another branch.
