@@ -16,6 +16,7 @@ For example, with those numbers, one can create the following implementation of 
 
 ```Fortran
 ! Let Coeffs be the array that contains the outputted values of lanczos_coefficients.f90
+! Here, like in lanczos_coefficients.f90, "qp" is just SELECTED_REAL_KIND(p=33, r=4931), i.e., qp = 16.
 
 RECURSIVE FUNCTION GAMMA_L(z) RESULT(res)
     IMPLICIT NONE
