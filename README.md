@@ -8,7 +8,8 @@ Compile the `Main.java` file then execute the output on the command line. It wil
 - $k$, any positive integer.
 - $g$, any nonnegative real number. 
 
-Next, it will ask how many digits would you like to see for each number that will be outputted (with the help of `java.math.BigDecimal.setScale()`).
+Next, it will ask how many digits would you like to see for each number that will be outputted (with the help of `java.math.BigDecimal.setScale()`). 
+I set `MathContext mc = new MathContext(1000, RoundingMode.HALF_UP);` in the code, so anything larger in 1000 would probably result in garbage.
 
 It will then output $k+1$ numbers, say $a'_1, ..., a'_k$ (in the same order of the output), which are computed depending on the values of $k$ and $g$. With that, for any $z\in\mathbb{C}$ such that $\Re(z)>-0.5$, we have the following approximation:
 
